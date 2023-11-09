@@ -24,6 +24,9 @@ public class App
         ChromeOptions chromeOptions = new ChromeOptions();
         
         chromeOptions.addArguments("--headless");
+        chromeOptions.addArguments("--disable-gpu");
+        chromeOptions.addArguments("--no-sandbox");
+        chromeOptions.addArguments("--disable-dev-shm-usage");
         
         WebDriver driver = new ChromeDriver(chromeOptions);
         
