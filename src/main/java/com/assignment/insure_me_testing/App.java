@@ -24,13 +24,10 @@ public class App
         ChromeOptions chromeOptions = new ChromeOptions();
         
         chromeOptions.addArguments("--headless");
-        chromeOptions.addArguments("--disable-gpu");
-        chromeOptions.addArguments("--no-sandbox");
-        chromeOptions.addArguments("--disable-dev-shm-usage");
         
         WebDriver driver = new ChromeDriver(chromeOptions);
         
-        driver.get("http://34.230.28.104:8081/contact.html");
+        driver.get("http://18.215.242.102:8081/contact.html");
         System.out.println("Hello, test case executing.");
         
         driver.findElement(By.id("inputName")).sendKeys("Mainak");
