@@ -23,6 +23,8 @@ public class App
     	
         ChromeOptions chromeOptions = new ChromeOptions();
         
+        chromeOptions.addArguments("--no-sandbox");
+        chromeOptions.addArguments("--disable-dev-shm-usage");
         chromeOptions.addArguments("--headless");
         
         WebDriver driver = new ChromeDriver(chromeOptions);
