@@ -27,7 +27,7 @@ public class App
         
         WebDriver driver = new ChromeDriver(chromeOptions);
         
-        driver.get("http://18.215.242.102:8081/contact.html");
+        driver.get("http://54.158.237.224:8081/contact.html");
         System.out.println("Hello, test case executing.");
         
         driver.findElement(By.id("inputName")).sendKeys("Mainak");
